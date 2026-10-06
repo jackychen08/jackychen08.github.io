@@ -15,7 +15,7 @@ title: Homepage
   </div>
 </section>
 
-I am a third-year Ph.D. student in the [Joint Carnegie Mellon–University of Pittsburgh Ph.D. Program in Computational Biology](https://www.cmu.edu/compbio/), advised by [Dr. David Koes](https://bits.csb.pitt.edu/). My research focuses on machine learning methods for molecular discovery and sampling. Prior to my PhD, I worked with Dr. Alan Cheng at Merck on deep learning for ADMET prediction. I received my undergraduate degree from Johns Hopkins University, where I worked with Dr. Jeffrey Gray on diffusion models for protein docking.
+I am a third-year Ph.D. student in the [Joint Carnegie Mellon–University of Pittsburgh Ph.D. Program in Computational Biology](https://www.cmu.edu/compbio/), advised by [Dr. David Koes](https://bits.csb.pitt.edu/). My research focuses on machine learning methods for molecular discovery and sampling. Prior to my Ph.D., I worked with Dr. Alan Cheng at Merck on deep learning for ADMET prediction. I received my undergraduate degree from Johns Hopkins University, where I worked with Dr. Jeffrey Gray on diffusion models for protein docking.
 
 {% if site.data.education.size > 0 or site.data.experience.size > 0 -%}
 <section class="cv-grid">
