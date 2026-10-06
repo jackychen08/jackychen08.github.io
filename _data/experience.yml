@@ -1,5 +1,10 @@
 # Experience for the homepage, newest first. Same fields as _data/education.yml
 # (org, logo, detail, role, dates). Entries without a logo get a blank badge.
+- org: Merck & Co., Inc.
+  logo: /assets/img/logos/merck.png
+  detail: Modeling & Informatics
+  role: ML Researcher
+  # dates: add start - end, e.g. "June 2023 - Aug. 2024"
 - org: Johns Hopkins University
   logo: /assets/img/logos/jhu.png
   detail: Gray Lab
