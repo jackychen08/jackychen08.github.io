@@ -20,6 +20,20 @@
 #       booktitle={NeurIPS},
 #       year={2025}
 #     }
+- title: "WELP: Weighted Ensemble in the LooP for Committor Learning"
+  authors: ["Jacky Chen", "Rishal Aggarwal", "David Ryan Koes"]
+  venue: "NeurIPS"
+  year: 2026
+  note: "Accepted"
+  selected: true
+  bibtex: |
+    @inproceedings{chen2026welp,
+      title={{WELP}: Weighted Ensemble in the {LooP} for Committor Learning},
+      author={Chen, Jacky and Aggarwal, Rishal and Koes, David Ryan},
+      booktitle={Advances in Neural Information Processing Systems},
+      year={2026}
+    }
+
 - title: "Can We Extract Physics-like Energies from Generative Protein Diffusion Models?"
   authors: ["Sudeep Sarma", "Harrison Truscott", "Da Xu", "Kendall Reid", "Lee-Shin Chu", "Jacky Chen", "Jeffrey J. Gray"]
   venue: "PRX Life"
