@@ -1,16 +1,30 @@
 <ul class="cv-list">
   {%- for item in include.items %}
-  <li class="cv-item">
-    <div class="cv-head">
-      <span class="cv-title">{{ item.title | xml_escape }}</span>
-      {%- if item.dates %}<span class="cv-dates">{{ item.dates | xml_escape }}</span>{% endif %}
+  <li class="cv-entry">
+    {%- if item.orgs %}
+      {%- for o in item.orgs %}
+    <div class="cv-org">
+      {%- if o.logo %}<img class="cv-logo" src="{{ o.logo | relative_url }}" alt="" width="18" height="18">{% else %}<span class="cv-logo cv-logo-blank" aria-hidden="true"></span>{% endif -%}
+      <span>{{ o.name | xml_escape }}</span>
     </div>
-    {%- if item.org %}
-    <div class="cv-org">{{ item.org | xml_escape }}</div>
+      {%- endfor %}
+    {%- else %}
+    <div class="cv-org">
+      {%- if item.logo %}<img class="cv-logo" src="{{ item.logo | relative_url }}" alt="" width="18" height="18">{% else %}<span class="cv-logo cv-logo-blank" aria-hidden="true"></span>{% endif -%}
+      <span>{{ item.org | xml_escape }}</span>
+    </div>
     {%- endif %}
-    {%- if item.detail %}
-    <div class="cv-detail">{{ item.detail | xml_escape }}</div>
-    {%- endif %}
+    <div class="cv-sub">
+      {%- if item.detail %}
+      <div>{{ item.detail | xml_escape }}</div>
+      {%- endif %}
+      <div class="cv-meta">
+        <div>{{ item.role | xml_escape }}</div>
+        {%- if item.dates %}
+        <div class="cv-dates"><em>{{ item.dates | xml_escape }}</em></div>
+        {%- endif %}
+      </div>
+    </div>
   </li>
   {%- endfor %}
 </ul>

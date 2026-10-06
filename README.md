@@ -12,7 +12,7 @@ See [PLAN.md](PLAN.md) for the design plan.
 | Profile links (Email, Scholar, LinkedIn, GitHub) | `_data/links.yml` |
 | News | `_data/news.yml` |
 | Education | `_data/education.yml` |
-| Research experience | `_data/experience.yml` |
+| Experience | `_data/experience.yml` (badge images in `assets/img/logos/`) |
 | Publications | `_data/publications.yml` |
 | Top navigation | `nav:` in `_config.yml` |
 
