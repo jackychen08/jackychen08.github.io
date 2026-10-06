@@ -1,0 +1,31 @@
+{%- assign pub = include.pub -%}
+<li class="pub">
+  <div class="pub-title">
+    {%- if pub.links.paper -%}<a href="{{ pub.links.paper }}">{{ pub.title | xml_escape }}</a>{%- else -%}{{ pub.title | xml_escape }}{%- endif -%}
+  </div>
+  <div class="pub-authors">
+    {%- for a in pub.authors -%}
+      {%- if site.author.pub_names contains a -%}<strong>{{ a | xml_escape }}</strong>{%- else -%}{{ a | xml_escape }}{%- endif -%}
+      {%- if pub.equal_contrib contains a -%}*{%- endif -%}
+      {%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  </div>
+  <div class="pub-venue">
+    <em>{{ pub.venue | xml_escape }}</em>, {{ pub.year }}
+    {%- if pub.note %} <span class="pub-note">{{ pub.note | xml_escape }}</span>{% endif -%}
+  </div>
+  {%- if pub.links or pub.bibtex %}
+  <div class="pub-links">
+    {%- for link in pub.links %}
+    {%- assign key = link[0] %}
+    <a class="pill" href="{{ link[1] }}">{{ site.pub_link_labels[key] | default: key }}</a>
+    {%- endfor %}
+    {%- if pub.bibtex %}
+    <details class="bibtex">
+      <summary class="pill">BibTeX</summary>
+      <pre>{{ pub.bibtex | strip | xml_escape }}</pre>
+    </details>
+    {%- endif %}
+  </div>
+  {%- endif %}
+</li>

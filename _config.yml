@@ -1,0 +1,49 @@
+# Site settings
+title: Jacky Chen
+description: Personal academic website of Jacky Chen.
+url: "https://jackychen08.github.io"
+baseurl: ""
+
+# Use our own layouts instead of GitHub Pages' default theme.
+theme: null
+
+author:
+  name: Jacky Chen
+  position: ""            # e.g. "PhD Student"
+  affiliation: ""         # e.g. "Carnegie Mellon University"
+  photo: ""               # e.g. /assets/img/profile.jpg
+  # Author strings to bold in publication lists (match how your name appears in papers).
+  pub_names:
+    - Jacky Chen
+
+# Top navigation. Add the CV entry once assets/cv.pdf exists.
+nav:
+  - title: Home
+    url: /
+  - title: Publications
+    url: /publications
+  # - title: CV
+  #   url: /assets/cv.pdf
+
+# Button labels for keys under a publication's `links:`.
+pub_link_labels:
+  paper: Paper
+  arxiv: arXiv
+  pdf: PDF
+  code: Code
+  project: Project
+  slides: Slides
+  poster: Poster
+  video: Video
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - PLAN.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

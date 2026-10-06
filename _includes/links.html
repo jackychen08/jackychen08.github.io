@@ -1,0 +1,7 @@
+<ul class="profile-links">
+  {%- for link in site.data.links %}
+  {%- if link.url and link.url != "" %}
+  <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+  {%- endif %}
+  {%- endfor %}
+</ul>

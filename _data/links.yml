@@ -1,0 +1,10 @@
+# Profile links shown under your name on the homepage.
+# Entries with an empty url are hidden.
+- name: Email
+  url: ""                 # e.g. mailto:you@example.edu
+- name: Google Scholar
+  url: ""                 # e.g. https://scholar.google.com/citations?user=XXXXXXX
+- name: LinkedIn
+  url: https://www.linkedin.com/in/jacky-chen-ba1270126/
+- name: GitHub
+  url: https://github.com/jackychen08

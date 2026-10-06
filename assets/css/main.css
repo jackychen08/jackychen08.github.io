@@ -1,0 +1,213 @@
+:root {
+  --bg: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5f6368;
+  --border: #e3e3e6;
+  --accent: #1f4e8c;
+  --accent-soft: #eaf0f8;
+  --code-bg: #f6f7f9;
+  --note: #9a3412;
+  --note-bg: #fff1e6;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141517;
+    --text: #e6e6e8;
+    --muted: #a0a4ab;
+    --border: #2c2e33;
+    --accent: #8db4ea;
+    --accent-soft: #1d2a3b;
+    --code-bg: #1c1e22;
+    --note: #fdba74;
+    --note-bg: #3a2414;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2 { line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main.container { padding-top: 2.5rem; padding-bottom: 3rem; }
+
+.muted { color: var(--muted); }
+
+/* Header & nav */
+.site-header { border-bottom: 1px solid var(--border); }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-title { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav ul a { color: var(--muted); }
+.nav ul a:hover, .nav ul a[aria-current="page"] { color: var(--text); }
+.nav ul a[aria-current="page"] { font-weight: 600; }
+
+/* Homepage profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.role { margin: 0 0 0.75rem; color: var(--muted); }
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news { padding-left: 0; list-style: none; }
+.news li { margin-bottom: 0.4rem; }
+.news-date { display: inline-block; min-width: 5.5rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* Publications */
+.year-nav {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.year-nav a {
+  padding: 0.15rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.year-nav a:hover { background: var(--accent-soft); text-decoration: none; }
+
+.pub-year { scroll-margin-top: 1rem; }
+.pub-year h2 a { color: var(--text); }
+
+.pub-list { margin: 0; padding: 0; list-style: none; }
+
+.pub { margin-bottom: 1.5rem; }
+.pub-title { font-weight: 600; }
+.pub-title a { color: var(--text); }
+.pub-title a:hover { color: var(--accent); }
+.pub-authors, .pub-venue { font-size: 0.95rem; }
+.pub-venue { color: var(--muted); }
+
+.pub-note {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0 0.45rem;
+  border-radius: 4px;
+  background: var(--note-bg);
+  color: var(--note);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0 0.6rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.pill:hover { background: var(--accent-soft); text-decoration: none; }
+
+.bibtex { line-height: 0; }  /* keep the closed toggle aligned with the link pills */
+.bibtex summary { list-style: none; vertical-align: top; }
+.bibtex summary::-webkit-details-marker { display: none; }
+.bibtex[open] { flex-basis: 100%; }
+
+.bibtex pre {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.6rem; }
+  .profile { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .profile-photo { width: 140px; height: 140px; }
+}

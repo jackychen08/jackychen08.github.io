@@ -1,0 +1,23 @@
+# All publications, newest first. The Publications page groups them by `year`
+# (each year gets an anchor like /publications#year-2025); within a year,
+# entries keep the order they have in this file.
+#
+# - title: "Paper Title"
+#   authors: ["Jacky Chen", "Second Author", "Advisor Name"]
+#   equal_contrib: ["Jacky Chen", "Second Author"]   # optional, adds "*"
+#   venue: "NeurIPS"
+#   year: 2025
+#   note: "Spotlight"                                  # optional badge
+#   selected: true                                     # optional, also list on homepage
+#   links:                                             # optional; see pub_link_labels in _config.yml
+#     paper: https://...
+#     arxiv: https://arxiv.org/abs/...
+#     code: https://github.com/...
+#   bibtex: |                                          # optional, shown in a BibTeX toggle
+#     @inproceedings{chen2025paper,
+#       title={Paper Title},
+#       author={Chen, Jacky and Author, Second and Name, Advisor},
+#       booktitle={NeurIPS},
+#       year={2025}
+#     }
+[]

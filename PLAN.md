@@ -52,7 +52,7 @@ from a repo named exactly `<username>.github.io`.
 
 | Option | URL | Notes |
 |---|---|---|
-| **A. Rename repo to `jackychen08.github.io`** (recommended) | `https://jackychen08.github.io/` | Clean root URL. `baseurl: ""` |
+| **A. Rename repo to `jackychen08.github.io`** (chosen) | `https://jackychen08.github.io/` | Clean root URL. `baseurl: ""` |
 | B. Keep `jackychen` as a project site | `https://jackychen08.github.io/jackychen/` | Needs `baseurl: /jackychen`. All links must use `relative_url` |
 | C. Either, plus a custom domain | e.g. `https://jackychen.io/` | Add a `CNAME` file and DNS records. Same setup as iandunn.io |
 
@@ -99,7 +99,7 @@ Every page shares a top nav (`Home · Publications · CV`) and a footer
 │   ├── papers/              # self-hosted PDFs (optional)
 │   └── cv.pdf
 ├── index.md                 # Home
-├── publications.md          # permalink: /publications
+├── publications.html        # permalink: /publications
 ├── 404.html
 ├── Gemfile                  # local preview only (github-pages gem)
 └── README.md                # how to add a paper / preview locally
@@ -140,7 +140,7 @@ the order in the file.
 
 ## 7. Publications page rendering
 
-`publications.md` (core logic):
+`publications.html` (core logic):
 
 ```liquid
 ---
@@ -221,7 +221,7 @@ Anchor behavior:
 
 ## 11. Open questions
 
-1. Rename the repo to `jackychen08.github.io`, keep it as a project site, or use a custom domain?
+1. ~~Rename the repo to `jackychen08.github.io`, keep it as a project site, or use a custom domain?~~ Rename (option A).
 2. Which pages beyond Home and Publications (CV, Projects, Talks, Teaching, Blog)?
 3. Paper thumbnails and abstract toggles: include them or keep entries text-only?
 4. Group by year only (like the reference), or add type filters (Conference / Journal / Preprint)?

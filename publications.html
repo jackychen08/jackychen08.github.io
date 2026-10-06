@@ -1,0 +1,30 @@
+---
+layout: default
+title: Publications
+permalink: /publications
+---
+{%- assign years = site.data.publications | group_by: "year" | sort: "name" | reverse -%}
+<h1>Publications</h1>
+
+{% if years.size > 0 -%}
+<p class="muted">* denotes equal contribution.</p>
+
+<nav class="year-nav" aria-label="Jump to year">
+  {%- for y in years %}
+  <a href="#year-{{ y.name }}">{{ y.name }}</a>
+  {%- endfor %}
+</nav>
+
+{% for y in years -%}
+<section id="year-{{ y.name }}" class="pub-year">
+  <h2><a href="#year-{{ y.name }}">{{ y.name }}</a></h2>
+  <ol class="pub-list">
+    {%- for pub in y.items %}
+    {% include publication.html pub=pub %}
+    {%- endfor %}
+  </ol>
+</section>
+{% endfor -%}
+{%- else -%}
+<p class="muted">Publications coming soon.</p>
+{%- endif %}
