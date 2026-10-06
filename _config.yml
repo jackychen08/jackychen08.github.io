@@ -9,8 +9,8 @@ theme: null
 
 author:
   name: Jacky Chen
-  position: ""            # e.g. "PhD Student"
-  affiliation: ""         # e.g. "Carnegie Mellon University"
+  position: "Ph.D. Student"
+  affiliation: "CMU-Pitt Joint Computational Biology Program"
   photo: ""               # e.g. /assets/img/profile.jpg
   # Author strings to bold in publication lists (match how your name appears in papers).
   pub_names:
@@ -31,6 +31,7 @@ pub_link_labels:
   arxiv: arXiv
   pdf: PDF
   code: Code
+  chemrxiv: ChemRxiv
   project: Project
   slides: Slides
   poster: Poster

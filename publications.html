@@ -7,7 +7,10 @@ permalink: /publications
 <h1>Publications</h1>
 
 {% if years.size > 0 -%}
+{%- assign shared = site.data.publications | where_exp: "pub", "pub.equal_contrib" -%}
+{%- if shared.size > 0 %}
 <p class="muted">* denotes equal contribution.</p>
+{%- endif %}
 
 <nav class="year-nav" aria-label="Jump to year">
   {%- for y in years %}

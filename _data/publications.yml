@@ -20,4 +20,73 @@
 #       booktitle={NeurIPS},
 #       year={2025}
 #     }
-[]
+- title: "BoltzNCE: Learning Likelihoods for Boltzmann Generation with Stochastic Interpolants and Noise Contrastive Estimation"
+  authors: ["Rishal Aggarwal", "Jacky Chen", "Nicholas Boffi", "David Koes"]
+  venue: "NeurIPS"
+  year: 2025
+  selected: true
+  links:
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/f455010f4ff54a5d857fde29f14bdd3e-Abstract-Conference.html
+    arxiv: https://arxiv.org/abs/2507.00846
+    code: https://github.com/RishalAggarwal/BoltzNCE
+  bibtex: |
+    @inproceedings{aggarwal2025boltznce,
+      title={{BoltzNCE}: Learning Likelihoods for {Boltzmann} Generation with Stochastic Interpolants and Noise Contrastive Estimation},
+      author={Aggarwal, Rishal and Chen, Jacky and Boffi, Nicholas and Koes, David},
+      booktitle={Advances in Neural Information Processing Systems},
+      volume={38},
+      pages={167195--167227},
+      year={2025},
+      doi={10.52202/085713-5574}
+    }
+
+- title: "Can We Extract Physics-like Energies from Generative Protein Diffusion Models?"
+  authors: ["Sudeep Sarma", "Harrison Truscott", "Da Xu", "Kendall Reid", "Lee-Shin Chu", "Jacky Chen", "Jeffrey J. Gray"]
+  venue: "bioRxiv"
+  year: 2025
+  links:
+    paper: https://doi.org/10.1101/2025.11.28.690021
+  bibtex: |
+    @article{sarma2025extract,
+      title={Can We Extract Physics-like Energies from Generative Protein Diffusion Models?},
+      author={Sarma, Sudeep and Truscott, Harrison and Xu, Da and Reid, Kendall and Chu, Lee-Shin and Chen, Jacky and Gray, Jeffrey J.},
+      journal={bioRxiv},
+      year={2025},
+      doi={10.1101/2025.11.28.690021}
+    }
+
+- title: "Data Scaling and Generalization Insights for Medicinal Chemistry Deep Learning Models"
+  authors: ["Jacky Chen", "Yunsie Chung", "Jonathan Tynan", "Chen Cheng", "Song Yang", "Alan C. Cheng"]
+  venue: "Journal of Chemical Information and Modeling"
+  year: 2025
+  selected: true
+  links:
+    paper: https://doi.org/10.1021/acs.jcim.5c00538
+    chemrxiv: https://doi.org/10.26434/chemrxiv-2024-bznm6
+  bibtex: |
+    @article{chen2025data,
+      title={Data Scaling and Generalization Insights for Medicinal Chemistry Deep Learning Models},
+      author={Chen, Jacky and Chung, Yunsie and Tynan, Jonathan and Cheng, Chen and Yang, Song and Cheng, Alan C.},
+      journal={Journal of Chemical Information and Modeling},
+      volume={65},
+      number={12},
+      pages={5887--5898},
+      year={2025},
+      publisher={American Chemical Society},
+      doi={10.1021/acs.jcim.5c00538}
+    }
+
+- title: "Unsupervised Machine Learning Unveil Easily Identifiable Subphenotypes of COVID-19 With Differing Disease Trajectories"
+  authors: ["Jacky Chen", "Jocelyn Hsu", "Alexandra Szewc", "Clotilde Balucini", "Tej D. Azad", "Kirby Gong", "Han Kim", "Robert D. Stevens"]
+  venue: "medRxiv"
+  year: 2023
+  links:
+    paper: https://doi.org/10.1101/2023.04.07.23288152
+  bibtex: |
+    @article{chen2023unsupervised,
+      title={Unsupervised Machine Learning Unveil Easily Identifiable Subphenotypes of {COVID-19} With Differing Disease Trajectories},
+      author={Chen, Jacky and Hsu, Jocelyn and Szewc, Alexandra and Balucini, Clotilde and Azad, Tej D. and Gong, Kirby and Kim, Han and Stevens, Robert D.},
+      journal={medRxiv},
+      year={2023},
+      doi={10.1101/2023.04.07.23288152}
+    }

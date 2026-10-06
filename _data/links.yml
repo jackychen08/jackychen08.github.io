@@ -3,7 +3,7 @@
 - name: Email
   url: ""                 # e.g. mailto:you@example.edu
 - name: Google Scholar
-  url: ""                 # e.g. https://scholar.google.com/citations?user=XXXXXXX
+  url: https://scholar.google.com/citations?user=GfoU6SUAAAAJ
 - name: LinkedIn
   url: https://www.linkedin.com/in/jacky-chen-ba1270126/
 - name: GitHub

@@ -15,8 +15,8 @@ title: Homepage
   </div>
 </section>
 
-<!-- Bio: replace this placeholder with 1-2 paragraphs about your research. -->
-Bio coming soon.
+<!-- Bio: expand this into 1-2 paragraphs about your research. -->
+I'm a Ph.D. student in the CMU-Pitt Joint Computational Biology Program, working on machine learning for drug discovery.
 
 {% if site.data.news.size > 0 -%}
 <h2>News</h2>
