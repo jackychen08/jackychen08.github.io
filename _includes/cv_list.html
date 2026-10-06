@@ -1,0 +1,16 @@
+<ul class="cv-list">
+  {%- for item in include.items %}
+  <li class="cv-item">
+    <div class="cv-head">
+      <span class="cv-title">{{ item.title | xml_escape }}</span>
+      {%- if item.dates %}<span class="cv-dates">{{ item.dates | xml_escape }}</span>{% endif %}
+    </div>
+    {%- if item.org %}
+    <div class="cv-org">{{ item.org | xml_escape }}</div>
+    {%- endif %}
+    {%- if item.detail %}
+    <div class="cv-detail">{{ item.detail | xml_escape }}</div>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>

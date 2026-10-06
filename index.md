@@ -15,8 +15,9 @@ title: Homepage
   </div>
 </section>
 
-<!-- Bio: expand this into 1-2 paragraphs about your research. -->
-I'm a Ph.D. student in the CMU-Pitt Joint Computational Biology Program, working on machine learning for drug discovery.
+I'm a Ph.D. student in the CMU-Pitt Joint Ph.D. Program in Computational Biology, broadly interested in machine learning for structural biology and drug discovery.
+
+Before my Ph.D., I did research at Johns Hopkins on diffusion models for protein docking in the Gray Lab, spectroscopy methods for membrane proteins, and machine learning for disease phenotyping.
 
 {% if site.data.news.size > 0 -%}
 <h2>News</h2>
@@ -36,4 +37,14 @@ I'm a Ph.D. student in the CMU-Pitt Joint Computational Biology Program, working
   {%- endfor %}
 </ol>
 <p><a href="{{ '/publications' | relative_url }}">All publications &rarr;</a></p>
+{%- endif %}
+
+{% if site.data.education.size > 0 -%}
+<h2>Education</h2>
+{% include cv_list.html items=site.data.education %}
+{%- endif %}
+
+{% if site.data.experience.size > 0 -%}
+<h2>Research Experience</h2>
+{% include cv_list.html items=site.data.experience %}
 {%- endif %}

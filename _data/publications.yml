@@ -20,6 +20,22 @@
 #       booktitle={NeurIPS},
 #       year={2025}
 #     }
+- title: "Can We Extract Physics-like Energies from Generative Protein Diffusion Models?"
+  authors: ["Sudeep Sarma", "Harrison Truscott", "Da Xu", "Kendall Reid", "Lee-Shin Chu", "Jacky Chen", "Jeffrey J. Gray"]
+  venue: "PRX Life"
+  year: 2026
+  links:
+    paper: https://doi.org/10.1103/m7qr-gnjc
+    biorxiv: https://doi.org/10.1101/2025.11.28.690021
+  bibtex: |
+    @article{sarma2026extract,
+      title={Can We Extract Physics-like Energies from Generative Protein Diffusion Models?},
+      author={Sarma, Sudeep and Truscott, Harrison and Xu, Da and Reid, Kendall and Chu, Lee-Shin and Chen, Jacky and Gray, Jeffrey J.},
+      journal={PRX Life},
+      year={2026},
+      doi={10.1103/m7qr-gnjc}
+    }
+
 - title: "BoltzNCE: Learning Likelihoods for Boltzmann Generation with Stochastic Interpolants and Noise Contrastive Estimation"
   authors: ["Rishal Aggarwal", "Jacky Chen", "Nicholas Boffi", "David Koes"]
   venue: "NeurIPS"
@@ -38,21 +54,6 @@
       pages={167195--167227},
       year={2025},
       doi={10.52202/085713-5574}
-    }
-
-- title: "Can We Extract Physics-like Energies from Generative Protein Diffusion Models?"
-  authors: ["Sudeep Sarma", "Harrison Truscott", "Da Xu", "Kendall Reid", "Lee-Shin Chu", "Jacky Chen", "Jeffrey J. Gray"]
-  venue: "bioRxiv"
-  year: 2025
-  links:
-    paper: https://doi.org/10.1101/2025.11.28.690021
-  bibtex: |
-    @article{sarma2025extract,
-      title={Can We Extract Physics-like Energies from Generative Protein Diffusion Models?},
-      author={Sarma, Sudeep and Truscott, Harrison and Xu, Da and Reid, Kendall and Chu, Lee-Shin and Chen, Jacky and Gray, Jeffrey J.},
-      journal={bioRxiv},
-      year={2025},
-      doi={10.1101/2025.11.28.690021}
     }
 
 - title: "Data Scaling and Generalization Insights for Medicinal Chemistry Deep Learning Models"

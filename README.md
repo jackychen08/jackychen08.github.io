@@ -7,10 +7,12 @@ See [PLAN.md](PLAN.md) for the design plan.
 
 | What | Where |
 |---|---|
-| Name, position, affiliation, photo | `author:` in `_config.yml` |
+| Name, position, affiliation, photo | `author:` in `_config.yml` (photo file: `assets/img/profile.jpg`) |
 | Bio | `index.md` |
 | Profile links (Email, Scholar, LinkedIn, GitHub) | `_data/links.yml` |
 | News | `_data/news.yml` |
+| Education | `_data/education.yml` |
+| Research experience | `_data/experience.yml` |
 | Publications | `_data/publications.yml` |
 | Top navigation | `nav:` in `_config.yml` |
 
