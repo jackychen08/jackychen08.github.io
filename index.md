@@ -15,9 +15,7 @@ title: Homepage
   </div>
 </section>
 
-I'm a Ph.D. student in the CMU-Pitt Joint Ph.D. Program in Computational Biology, broadly interested in machine learning for structural biology and drug discovery.
-
-Before my Ph.D., I did research at Johns Hopkins on diffusion models for protein docking in the Gray Lab, spectroscopy methods for membrane proteins, and machine learning for disease phenotyping.
+I am a third-year Ph.D. student in the [Joint Carnegie Mellon–University of Pittsburgh Ph.D. Program in Computational Biology](https://www.cmu.edu/compbio/), where I am advised by [David Koes](https://bits.csb.pitt.edu/). I am broadly interested in machine learning methods for molecular discovery and sampling problems. Previously, I worked with Alan Cheng at Merck on deep learning for ADMET prediction. I completed my undergraduate degree at Johns Hopkins University, where I worked with Jeffrey Gray on diffusion models for protein docking.
 
 {% if site.data.education.size > 0 or site.data.experience.size > 0 -%}
 <section class="cv-grid">
