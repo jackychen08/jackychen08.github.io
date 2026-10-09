@@ -24,7 +24,6 @@
   authors: ["Jacky Chen", "Rishal Aggarwal", "David Ryan Koes"]
   venue: "NeurIPS"
   year: 2026
-  note: "Accepted"
   selected: true
   bibtex: |
     @inproceedings{chen2026welp,
